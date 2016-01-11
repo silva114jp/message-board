@@ -15,13 +15,13 @@
   </div>
 </div>
 
-<%= form_for(@message) do |f| %>
+<%= form_for(@message, html: {class: "form-horizontal"}) do |f| %>
   名前：
-  <%= f.text_field :name, placeholder: "名前を入力" %>
+  <%= f.text_field :name, placeholder: "名前を入力"%>
   <br>
   
   内容：
-  <%= f.text_area :body, rows: "3", cols: "30", placeholder: "内容を入力" %>
+  <%= f.text_area :body, class: "form_control", placeholder: "内容を入力", cols:"30" %>
   <br>
   <%= f.submit class: "btn btn-sm btn-primary" %>
 <% end %>
