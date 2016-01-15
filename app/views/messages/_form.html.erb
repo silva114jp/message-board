@@ -3,9 +3,9 @@
     <div class="alert alert-danger">
       <%= alert %>
       <ul>
-        <% @message.errors.full_messages.each do |full_messages| %>
+        <% @message.errors.full_messages.each do |full_message| %>
         <li>
-          <%= full_messages %>
+          <%= full_message %>
         </li>
         <% end %>
       </ul>
